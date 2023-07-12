@@ -22,13 +22,19 @@ If the compilation is successful, you will find an executable file with the same
 
 ## Usage
 
+It expects you to create `input.txt` file with a number, e.g.,
+
+```
+XIV
+```
+
 Execute the program via running this command.
 
 ```cmd
 .\rmn2arbc.exe
 ```
 
-It will ask you to make a move & will show the result on the screen. Enjoy! 😊
+The arabic number equivalent of the given roman number is saved in `output.txt` file. Enjoy! 😊
 
 ## License
 
