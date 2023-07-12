@@ -34,6 +34,12 @@ wasmtime rmn2arbc.wasm
 
 It will ask you to enter a roman number. Then it converts the roman number into equivalent arabic number and show the result on the screen. Enjoy! 😊
 
+## Limitations
+
+- The app only supports roman numerals up to 3999. Larger numbers are not supported by the standard roman numeral system.
+- The app does not validate the input. Invalid or malformed roman numerals may produce unexpected results or errors.
+- The app does not handle exceptions or errors gracefully. If an error occurs, the app may crash or terminate abruptly.
+
 ## License
 
 This program is free and open source and licensed under [GNU General Public License](.\LICENSE). You can use it for any purpose, but please give credit to the original author.
