@@ -1,10 +1,9 @@
 // Roman number to Arabic number conversion
 // Copyright(c)-2006 by Abhishek Kumar. All rights reserved.
 
-#include<fstream.h>
-#include<stdlib.h>
-#include<string.h>
-#include<ctype.h>
+#include <iostream>
+#include <cstring>
+using namespace std;
 
 class Roman_Arabic
 {
@@ -86,20 +85,15 @@ int main()
     Roman_Arabic roman_to_arabic;
     char roman[20];
 
-    ifstream in;
-    ofstream out;
-    out.open("output.txt");
-    if(!out) out<<"Can not write in file!";
-    in.open("input.txt");
-    if(!in) out<<"File does not exist!";
-    in.getline(roman,50);
+    // accept the string from cmd line instead of file
+    cout << "Enter a roman numeral: ";
+    cin >> roman;
 
     cin.width(sizeof(roman)-1);
-    if(in)
-     out<<roman_to_arabic.roman2arabic(roman);
-
-    in.close();
-    out.close();
+    
+    // return the output on terminal instead of file
+    cout << roman_to_arabic.roman2arabic(roman) << endl;
 
     return 0;
 }
+
